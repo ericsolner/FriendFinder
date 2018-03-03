@@ -5,7 +5,7 @@ var path = require('path');
 
 // Configure the Express application
 var app = express();
- var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 // Expose the public directory to access CSS files
 app.use(express.static(path.join(__dirname, './app/public')));
@@ -21,6 +21,6 @@ require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Start listening on PORT
    app.listen(port, function() {
-   	// console.log ("working");
+   	// console.log("Listening on PORT " + port);
 
 });
