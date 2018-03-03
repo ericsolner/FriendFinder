@@ -21,6 +21,6 @@ require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Start listening on PORT
    app.listen(port, function() {
-   	console.log ("working");
+   	// console.log ("working");
 
 });
